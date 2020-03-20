@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from 'src/app/login/login.component';
+import { ProfilComponent } from 'src/app/profil/profil.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: '', component: LoginComponent },
+  { path: 'profil', component: ProfilComponent }
+  //{ path: 'home', loadChildren: () => import('./login/login.component').then( m => m.LoginComponent)},
 ];
 
 @NgModule({

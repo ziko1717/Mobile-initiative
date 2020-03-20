@@ -1,0 +1,13 @@
+.example-card {
+    max-width: 400px;
+  }
+  .main-div{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .example-header-image {
+    background-image: url('../../assets/icon/ziko.jpg');
+    background-size: cover;
+  }

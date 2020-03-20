@@ -1,5 +1,7 @@
 {
   "name": "testMob",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
