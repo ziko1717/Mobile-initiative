@@ -5,6 +5,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { LoginComponent } from 'src/app/login/login.component';
 import { ProfilComponent } from 'src/app/profil/profil.component'
 import { DataServiceService }  from 'src/app/data-service.service';
+import { RegisterComponent } from 'src/app/register/register.component';
 
 
 import {MatCardModule} from '@angular/material/card';
@@ -22,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { from } from 'rxjs';
 
 @NgModule({
-  declarations: [AppComponent,LoginComponent,ProfilComponent],
+  declarations: [AppComponent,LoginComponent,ProfilComponent,RegisterComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,FormsModule, BrowserAnimationsModule,MatToolbarModule,MatCardModule,MatFormFieldModule,MatInputModule],
   providers: [

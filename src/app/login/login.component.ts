@@ -20,13 +20,15 @@ export class LoginComponent implements OnInit {
   gotoProfilDisplay() {
     if(this.email == "amine@orange.com" && this.password == "root") {
       this.dataService.email = this.email;
-      this.messageEvent.emit(this.email);
       this.router.navigateByUrl('profil');
     }
     else {
       console.log("Authentification failed");
     }
     
+}
+gotoRegister() {
+  this.router.navigateByUrl('register');
 }
 
 }
